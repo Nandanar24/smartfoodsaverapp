@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{_layout :: content(~{::section})}">
+<section class="content-card">
+  <h2 class="card-title">Create an Account</h2>
+
+  <div th:if="${error}" class="form-alert" th:text="${error}"></div>
+
+  <form th:action="@{/register}" th:object="${registration}" method="post" novalidate>
+    <div class="form-row">
+      <label for="name">Full Name</label>
+      <input id="name" th:field="*{name}" maxlength="50" required />
+    </div>
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input id="email" th:field="*{email}" maxlength="100" required />
+    </div>
+    <div class="form-row">
+      <label for="password">Password</label>
+      <input id="password" th:field="*{password}" type="password" minlength="6" maxlength="20" required />
+    </div>
+    <div class="form-row">
+      <label for="confirmPassword">Confirm</label>
+      <input id="confirmPassword" th:field="*{confirmPassword}" type="password" minlength="6" maxlength="20" required />
+    </div>
+
+    <!-- field-level validation messages -->
+    <div class="form-errors" th:if="${#fields.hasErrors('*')}">
+      <ul>
+        <li th:each="e : ${#fields.errors('*')}" th:text="${e}"></li>
+      </ul>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn-primary">Register</button>
+    </div>
+
+    <p class="alt-link">Already have an account? <a th:href="@{/signin}">Sign in</a></p>
+  </form>
+</section>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body th:replace="~{_layout :: content(~{::section})}">
+<section class="content-box">
+  <h1>Reduce food waste with smarter planning</h1>
+  <p>Browse storage tips, use up leftovers, and plan meals.</p>
+  <p>Start planning</p>
+
+  <!-- This link is fine; it won't cause a loop now that your success URL is "/" -->
+  <p><a th:href="@{/signin}">Sign In</a></p>
+</section>
+</body>
+</html>

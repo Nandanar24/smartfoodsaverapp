@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:fragment="content(content)">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400&display=swap"
+        rel="stylesheet">
+  <link th:href="@{/style.css}" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Smart Food Saver</title>
+</head>
+<body>
+<header>
+  <h1>Smart Food Saver</h1>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a th:href="@{/}">Home</a></li>
+      <li><a th:href="@{/meal-planner}">Meal Planner</a></li>
+      <li><a th:href="@{/storage-tips}">Storage Tips</a></li>
+      <li><a th:href="@{/leftover-ideas}">Leftovers</a></li>
+      <li><a th:href="@{/signin}">Sign In</a></li>
+      <li><a th:href="@{/logout}">Logout</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="content">
+  <div th:fragment="content(content)">
+    <div th:insert="${content}">Default content</div>
+  </div>
+</main>
+
+<!--<main th:insert="${content}">Default content</main>-->
+
+<footer>
+  <p>&copy; 2025 SmartFoodSaver</p>
+</footer>
+</body>
+</html>

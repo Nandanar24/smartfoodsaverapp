@@ -1,0 +1,13 @@
+com\smartfoodsaver\model\User.class
+com\smartfoodsaver\model\StorageIdea.class
+com\smartfoodsaver\dto\RegistrationRequest.class
+com\smartfoodsaver\controller\AuthController.class
+com\smartfoodsaver\controller\PageController.class
+com\smartfoodsaver\model\Recipe.class
+com\smartfoodsaver\repository\UserRepository.class
+com\smartfoodsaver\SmartFoodSaverApplication.class
+com\smartfoodsaver\model\LeftoverIdea.class
+com\smartfoodsaver\service\UserService.class
+com\smartfoodsaver\model\MealPlan.class
+com\smartfoodsaver\security\SecurityConfig.class
+com\smartfoodsaver\model\MealPlanEntry.class
