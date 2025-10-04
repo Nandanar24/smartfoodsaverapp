@@ -12,7 +12,7 @@ header h1, header nav a {
   font-family: "Montserrat", sans-serif;
 }
 
-h1 {
+header h1 {
   font-size: 5rem;
   font-weight: 700;
   text-align: center;
@@ -268,3 +268,73 @@ em {
   font-weight: 500;
 }
 
+.leftover-page {
+  position: relative;
+  background: #fff !important;
+  color: #000 !important;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  line-height: 1.7;
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.leftover-page * {
+  position: relative;
+  z-index: 1;
+}
+
+.leftover-page h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: none !important;
+  opacity: 1 !important;
+}
+
+.leftover-page h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #145a32;
+  font-size: 1.6rem;
+  margin-top: 25px;
+  border-bottom: 2px solid #1abc9c;
+  padding-bottom: 5px;
+}
+
+.leftover-page ul {
+  list-style: disc;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+  .leftover-page {
+    padding: 30px;
+    max-width: 90%;
+  }
+  .leftover-page h1 { font-size: 2rem; }
+}
+
+@media (max-width: 600px) {
+  .leftover-page {
+    padding: 20px;
+    max-width: 95%;
+    border-radius: 10px;
+  }
+  .leftover-page h1 { font-size: 1.8rem; }
+  .leftover-page h2 { font-size: 1.4rem; }
+}
+
+.leftover-page .lo-title{
+  color:#000 !important;          /* force black */
+  text-shadow:none !important;    /* kill any global shadow/outline */
+  -webkit-text-stroke:0 !important; /* in case an outline was used */
+  opacity:1 !important;
+}

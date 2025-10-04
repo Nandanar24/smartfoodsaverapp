@@ -1,15 +1,87 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
-<body th:replace="~{_layout :: content(~{::section})}">
-<section class="content-card">
-  <h2>Left-overs</h2>
-  <p>Browse storage tips, use up leftovers, and plan meals.</p>
-  <p>Start planning</p>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{_layout :: content(~{::section})}">
+<section class="content-card leftover-page">
+  <h1 class="lo-title">🍲 Leftover & Storage Ideas</h1>
+  <p>Make your groceries go further with these smart storage and reuse tips across all food groups.</p>
+
+  <div class="category">
+    <h2>🥛 Dairy</h2>
+    <ul>
+      <li><strong>Milk:</strong> Store milk in the coldest part of your fridge — the back, not the door. Always reseal tightly and consider buying smaller bottles to avoid waste. Milk can be frozen for up to three months; leave space for expansion and thaw in the fridge.</li>
+      <li><strong>Cheese:</strong> Wrap hard cheese in baking paper then loosely in foil. Keep soft cheeses like brie or camembert in their original packaging. Cut mold off hard cheese with 2–3 cm around the area; discard soft cheese with mold.</li>
+      <li><strong>Yoghurt & Cream:</strong> Store in the main fridge section, not the door. Consume within a week of opening. You can whip leftover cream and freeze it in small portions for later.</li>
+      <li><strong>Butter:</strong> Butter lasts weeks in the fridge and up to nine months frozen. Keep small amounts in a covered dish for daily use — salted butter lasts longer.</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h2>🍞 Bread & Bakery</h2>
+    <ul>
+      <li><strong>Bread:</strong> Store at room temperature in a bread bin or paper bag. For long-term storage, slice and freeze bread — it lasts 3–6 months in the freezer.</li>
+      <li><strong>Pastries & Rolls:</strong> Keep in an airtight container for 1–2 days or freeze immediately. Reheat in the oven for best texture.</li>
+      <li><strong>Cakes:</strong> Unfrosted cakes can stay at room temperature for 2–3 days. Refrigerate frosted or cream-filled cakes and eat within 2 days.</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h2>🍚 Rice, Pasta & Grains</h2>
+    <ul>
+      <li><strong>Uncooked Rice:</strong> Store white rice in airtight containers; brown rice should be refrigerated or frozen for longer shelf life.</li>
+      <li><strong>Cooked Rice:</strong> Cool quickly, refrigerate within 1 hour, and eat within 2 days. Reheat until steaming hot.</li>
+      <li><strong>Pasta & Grains:</strong> Dry pasta lasts years; cooked pasta lasts 3–4 days. Oats and quinoa should be kept in sealed jars.</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h2>🍎 Fruit</h2>
+    <ul>
+      <li><strong>Bananas:</strong> Separate bananas or wrap stems to slow ripening. Freeze overripe ones for smoothies or baking.</li>
+      <li><strong>Apples & Pears:</strong> Store apples in the fridge away from leafy greens. Ripen pears at room temperature, then refrigerate.</li>
+      <li><strong>Berries:</strong> Don’t wash until ready to eat. Store in breathable containers with paper towels to absorb moisture.</li>
+      <li><strong>Citrus Fruits:</strong> Keep in mesh bags in the fridge for up to a month.</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h2>🥕 Vegetables</h2>
+    <ul>
+      <li><strong>Leafy Greens:</strong> Wash, dry, and store in sealed containers with paper towels to absorb moisture.</li>
+      <li><strong>Carrots & Celery:</strong> Remove tops and keep in airtight containers with water to stay crisp.</li>
+      <li><strong>Potatoes:</strong> Store in a cool, dark pantry. Keep away from onions.</li>
+      <li><strong>Onions & Garlic:</strong> Store in mesh bags for airflow; avoid plastic.</li>
+      <li><strong>Tomatoes:</strong> Keep at room temperature until ripe, then refrigerate to slow ripening.</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h2>🍗 Meat, Fish & Eggs</h2>
+    <ul>
+      <li><strong>Raw Meat & Poultry:</strong> Store on the bottom shelf of the fridge, sealed tightly. Freeze as soon as possible.</li>
+      <li><strong>Cooked Meat:</strong> Refrigerate and consume within 3–4 days. Slice before freezing.</li>
+      <li><strong>Fish & Seafood:</strong> Eat within 1–2 days or freeze immediately. Store covered with plastic wrap or ice.</li>
+      <li><strong>Eggs:</strong> Keep in their carton in the fridge, not the door.</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h2>🥫 Pantry Staples</h2>
+    <ul>
+      <li><strong>Flour:</strong> Store in airtight containers; wholemeal flour lasts longer refrigerated.</li>
+      <li><strong>Sugar & Salt:</strong> Keep sealed to avoid moisture clumps.</li>
+      <li><strong>Cooking Oils:</strong> Store away from heat and light. Refrigerate nut oils after opening.</li>
+      <li><strong>Spices:</strong> Store in airtight jars; replace ground spices every 6–12 months.</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h2>❄️ Freezer Tips</h2>
+    <p>Label and date food before freezing. Blanch vegetables before freezing to retain quality. Freeze in small portions and avoid freezer burn by double-wrapping meat or using freezer-safe bags.</p>
+  </div>
+
+  <div class="category">
+    <h2>🍲 Leftovers</h2>
+    <p>Cool leftovers within 2 hours, refrigerate, and consume within 2–3 days. Reheat until steaming hot and never reheat more than once. Freeze if you won’t eat soon — this prevents waste and saves time!</p>
+  </div>
 </section>
-<section class="content-card">
-  <h2>Storage tips page 2</h2>
-  <p>Browse storage tips, use up leftovers, and plan meals.</p>
-  <p>Start planning</p>
-</section>
-</body>
 </html>
