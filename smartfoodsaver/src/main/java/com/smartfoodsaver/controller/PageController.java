@@ -28,4 +28,9 @@ public class PageController {
   public String leftoverIdeas() {
     return "leftovers";
   }
+
+  @GetMapping("/about")
+  public String about() {
+    return "about";  // corresponds to about.html
+  }
 }

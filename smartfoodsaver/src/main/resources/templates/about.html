@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en"
+      th:replace="~{_layout :: content(~{::section})}">
+<section class="content-card about-page">
+  <h1>About SmartFoodSaver</h1>
+  <p>
+    SmartFoodSaver was created with one mission in mind: to help households save money and reduce food waste.
+    By making it easier to track expiry dates, plan meals, and learn storage tips, families can take control of
+    their kitchens while doing good for the environment.
+  </p>
+
+  <div class="category">
+    <h2>Why it matters</h2>
+    <ul>
+      <li>Food waste costs households money and increases landfill emissions.</li>
+      <li>Small changes — better storage, smarter shopping, planned leftovers — add up.</li>
+      <li>Our tools make it simple: reminders, ideas, and clear storage guidance.</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h2>Project notes</h2>
+    <ul>
+      <li><em>This project was developed as part of an NCEA Digital Technologies project.</em></li>
+      <li>It continues to grow with your feedback and support.</li>
+      <li>Built using Spring Boot, Thymeleaf, and H2 Database for fast and reliable performance.</li>
+    </ul>
+  </div>
+
+  <div class="category">
+    <h2>Database usage</h2>
+    <p>
+      SmartFoodSaver uses an <strong>H2 database</strong> for lightweight, in-memory or file-based storage — perfect for
+      testing, development, and small-scale production environments.
+    </p>
+    <ul>
+      <li>User registration details (name, email, encrypted password) are securely stored.</li>
+      <li>Meal planner data, expiry reminders, and storage tips are linked to your account for a personalized experience.</li>
+      <li>Passwords are encrypted using <strong>BCrypt</strong> for enhanced security.</li>
+      <li>For future updates, the system can easily migrate to MySQL or PostgreSQL for long-term data persistence.</li>
+    </ul>
+  </div>
+</section>
+</html>

@@ -335,3 +335,65 @@ em {
   -webkit-text-stroke:0 !important;
   opacity:1 !important;
 }
+
+/* ===== About page card (scoped) ===== */
+.about-page {
+  position: relative;
+  background: #ffffff;             /* clean white card */
+  color: #222;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  line-height: 1.7;
+  width: 100%;
+  max-width: 1000px;               /* cap on large screens */
+  margin: 40px auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.about-page h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #000;                     /* page title in black */
+  font-size: 2.2rem;               /* slightly larger than h2 */
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.about-page h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #145a32;                  /* deep green to match theme */
+  font-size: 1.6rem;
+  margin-top: 26px;
+  border-bottom: 2px solid #1abc9c;
+  padding-bottom: 6px;
+}
+
+.about-page .category { margin-top: 14px; }
+
+.about-page ul {
+  list-style: disc;
+  margin-left: 25px;
+  margin-top: 8px;
+  columns: 2;                      /* two columns on wide screens */
+  column-gap: 32px;
+}
+.about-page li { break-inside: avoid; margin-bottom: 10px; }
+.about-page em { font-style: italic; color: #000; }
+
+/* ===== Responsive tweaks ===== */
+@media (max-width: 992px) {
+  .about-page { padding: 32px; max-width: 90%; }
+  .about-page h1 { font-size: 2rem; }
+  .about-page ul { columns: 1; }   /* single column on tablet */
+}
+@media (max-width: 600px) {
+  .about-page {
+    padding: 22px;
+    max-width: 95%;
+    border-radius: 12px;
+  }
+  .about-page h1 { font-size: 1.8rem; }
+  .about-page h2 { font-size: 1.4rem; }
+}
