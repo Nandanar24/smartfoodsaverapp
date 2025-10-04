@@ -397,3 +397,92 @@ em {
   .about-page h1 { font-size: 1.8rem; }
   .about-page h2 { font-size: 1.4rem; }
 }
+
+/* ==== CONTACT PAGE ==== */
+.contact-page {
+  position: relative;
+  background: #ffffff;
+  color: #222;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  max-width: 800px;
+  margin: 40px auto;
+  line-height: 1.7;
+}
+
+.contact-page h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #145a32;             /* deep green */
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.contact-page p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contact-form .form-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-form label {
+  width: 150px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  font: inherit;
+  transition: box-shadow 0.2s ease, border 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #1abc9c;
+  box-shadow: 0 0 0 3px rgba(26,188,156,0.18);
+  outline: none;
+}
+
+.contact-form .btn-primary {
+  align-self: center;
+  padding: 10px 22px;
+  background: #1abc9c;
+  border: none;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.contact-form .btn-primary:hover {
+  background: #17a589;
+}
+
+/* 📱 Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 28px;
+    margin: 20px auto;
+    max-width: 90%;
+  }
+  .contact-page h1 {
+    font-size: 1.8rem;
+  }
+}

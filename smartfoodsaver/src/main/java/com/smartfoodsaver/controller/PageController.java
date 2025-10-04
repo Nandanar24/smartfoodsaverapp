@@ -31,6 +31,12 @@ public class PageController {
 
   @GetMapping("/about")
   public String about() {
-    return "about";  // corresponds to about.html
+    return "about";
   }
+
+  @GetMapping("/contact")
+  public String contact() {
+    return "contact";
+  }
+
 }
