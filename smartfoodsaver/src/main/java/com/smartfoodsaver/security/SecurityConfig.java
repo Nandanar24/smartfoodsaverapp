@@ -21,7 +21,6 @@ public class SecurityConfig {
   @Bean
   SecurityFilterChain filterChain(HttpSecurity http, DaoAuthenticationProvider authProvider) throws Exception {
     http
-      // don't remember last request (prevents looping back to /signin)
       .requestCache(c -> c.requestCache(new NullRequestCache()))
       .authenticationProvider(authProvider)
       .authorizeHttpRequests(auth -> auth
@@ -32,7 +31,7 @@ public class SecurityConfig {
         .ignoringRequestMatchers(new AntPathRequestMatcher("/h2-console/**"))
         .disable()
       )
-      // H2 console needs frames
+
       .headers(h -> h.frameOptions(f -> f.sameOrigin()))
 
       .formLogin(form -> form

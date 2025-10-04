@@ -24,18 +24,8 @@ public class PageController {
     return "storage-tips";
   }
 
-  @GetMapping("/leftover-ideas")
+  @GetMapping("/leftovers")
   public String leftoverIdeas() {
-    return "leftover-ideas";
-  }
-
-  @GetMapping("/why-food-waste-matters")
-  public String whyFoodWasteMatters() {
-    return "why-food-waste-matters";
-  }
-
-  @GetMapping("/contact")
-  public String contact() {
-    return "contact";
+    return "leftovers";
   }
 }
