@@ -37,7 +37,7 @@ public class UserService implements UserDetailsService {
     users.save(u);
   }
 
-  // Used by Spring Security to authenticate from DB
+  //Spring Security to authenticate from DB
   @Override
   public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
     System.out.println("### Loading user: " + email);

@@ -1,11 +1,9 @@
 package com.smartfoodsaver.model;
 
 import jakarta.persistence.*;
-//import lombok.*;
 import java.time.LocalDate;
 import java.util.*;
 
-//@Entity @Getter @Setter @NoArgsConstructor
 public class MealPlan {
   @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id;
 

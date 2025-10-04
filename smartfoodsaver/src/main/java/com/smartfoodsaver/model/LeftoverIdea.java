@@ -1,9 +1,7 @@
 package com.smartfoodsaver.model;
 
 import jakarta.persistence.*;
-//import lombok.*;
 
-//@Entity @Getter @Setter @NoArgsConstructor
 public class LeftoverIdea {
   @Id @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id;
   private String title;

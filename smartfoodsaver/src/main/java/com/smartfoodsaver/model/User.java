@@ -1,7 +1,6 @@
 package com.smartfoodsaver.model;
 
 import jakarta.persistence.*;
-//import lombok.*;
 import java.time.LocalDateTime;
 
 @Entity
@@ -25,7 +24,6 @@ public class User {
   @Column(nullable = false)
   private LocalDateTime createdAt = LocalDateTime.now();
 
-  // getters/setters
   public Long getId() { return id; }
   public String getName() { return name; }
   public void setName(String name) { this.name = name; }
