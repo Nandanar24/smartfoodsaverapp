@@ -58,7 +58,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* ========== HERO / MAIN CANVAS ========== */
+/* ========== MAIN CANVAS ========== */
 #content {
   position: relative;
   background: url("/images/hero-section-home-page.jpg") no-repeat center center;
@@ -69,17 +69,17 @@ body {
   border-radius: 8px;
   overflow: hidden;
   display: flex;
-  justify-content: center;   /* horizontal center children */
-  align-items: stretch;       /* vertical center */
+  justify-content: center;
+  align-items: stretch;
   gap: 40px;
 }
 
-/* Mild green overlay over the hero image */
+/* Mild green overlay over the image */
 #content::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(100, 128, 100, 0.7); /* soft green tint */
+  background: rgba(100, 128, 100, 0.7);
   z-index: 0;
 }
 
@@ -93,7 +93,7 @@ body {
 .home-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;    /* vertical center of both columns */
+  align-items: flex-start;
   gap: 10px;
   padding: 10px;
   min-height: auto;
@@ -111,15 +111,15 @@ body {
   overflow: hidden;
 
   display: flex;
-  justify-content: center;    /* keep side by side */
-  align-items: stretch;       /* 🔑 stretch children to equal height */
-  gap: 40px;                  /* spacing between them */
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
 }
 
 /* Left column (intro box) */
 .content-box {
-  flex: 2;                        /* takes more width */
-  display: flex;                  /* internal layout */
+  flex: 2;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   background: rgba(144, 238, 144, 0.65); /* mild green */
@@ -128,8 +128,8 @@ body {
   border-radius: 20px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.25);
   text-align: center;
-  margin: 0;                      /* 🔑 remove margins so flex stretch works */
-  height: auto;                   /* let flex control height */
+  margin: 0;
+  height: auto;
 }
 
 .content-box h2 {
@@ -139,7 +139,7 @@ body {
 
 /* Right column (auth card) */
 .content-card {
-  flex: 1;                        /* smaller width */
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,8 +149,8 @@ body {
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.18);
   color: #222;
-  margin-bottom: 20px;                      /* 🔑 remove margins so heights align */
-  height: auto;                   /* let flex control height */
+  margin-bottom: 20px;
+  height: auto;
 }
 
 .card-title {
@@ -222,16 +222,15 @@ body {
 
 .alt-link { text-align: center; margin-top: 12px; }
 
-/* Align checkbox with its label text */
 input[type="checkbox"] {
-  vertical-align: middle;   /* aligns center with text */
-  margin-right: 6px;        /* small gap before text */
+  vertical-align: middle;
+  margin-right: 6px;
 }
 
 .form-row-inline {
   display: flex;
-  align-items: center;      /* ensures vertical alignment */
-  gap: 8px;                 /* space between checkbox and text */
+  align-items: center;
+  gap: 8px;
 }
 
 
@@ -250,3 +249,22 @@ input[type="checkbox"] {
     margin: 0;
   }
 }
+
+.storage-tips {
+  text-align: left;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+.storage-tips ul {
+  list-style-type: disc;
+  margin-left: 30px;
+  line-height: 1.6;
+}
+
+em {
+  font-style: italic;
+  color: #ffffff;
+  font-weight: 500;
+}
+
