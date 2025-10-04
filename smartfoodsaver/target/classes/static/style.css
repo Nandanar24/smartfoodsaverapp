@@ -15,7 +15,7 @@
   gap: 120px;
 }
 
-/* links look like buttons */
+/* link buttons */
 .nav-links a {
   text-decoration: none;
   color: white;
@@ -33,7 +33,7 @@
 }
 
 header {
-  background-image: url("/images/Green-bg.jpg"); /* relative to /static/ */
+  background-image: url("/images/green-bg.jpg"); /* relative to /static/ */
   background-size: cover;       /* scale to cover full header area */
   background-position: center;  /* center the image */
   padding: 40px 20px;           /* space for content */
@@ -44,6 +44,19 @@ header {
 header h1, header nav a {
   font-family: "Montserrat", sans-serif;
 }
+
+h1 {
+  font-size: 5rem;   /* bigger than default */
+  font-weight: 700;  /* bold */
+  text-align: center; /* optional: center align */
+    color: white; /* inner text color */
+    text-shadow:
+      -2px -2px 0 #000,
+       2px -2px 0 #000,
+      -2px  2px 0 #000,
+       2px  2px 0 #000;  /* black outline */
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
