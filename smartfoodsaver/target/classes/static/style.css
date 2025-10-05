@@ -486,3 +486,19 @@ em {
     font-size: 1.8rem;
   }
 }
+
+.form-alert.success {
+  background: #e9f9f3;
+  border: 1px solid #1abc9c;
+  color: #0b5345;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.field-error {
+  color: #c0392b;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}

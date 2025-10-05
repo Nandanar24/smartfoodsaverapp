@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en"
+      th:replace="~{_layout :: content(~{::section})}">
+<section class="content-card">
+  <h1>Contact Messages</h1>
+  <table>
+    <thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Message</th><th>Created</th></tr></thead>
+    <tbody>
+    <tr th:each="m : ${messages}">
+      <td th:text="${m.id}"></td>
+      <td th:text="${m.name}"></td>
+      <td th:text="${m.email}"></td>
+      <td th:text="${m.message}"></td>
+      <td th:text="${m.createdAt}"></td>
+    </tr>
+    </tbody>
+  </table>
+</section>
+</html>
