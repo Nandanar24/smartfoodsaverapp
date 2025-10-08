@@ -1,5 +1,5 @@
 <th:block xmlns:th="http://www.thymeleaf.org" th:fragment="widget">
-  <div id="sfs-chat-launcher">💬</div>
+  <div id="sfs-chat-launcher" class="hidden">💬</div>
 
   <div id="sfs-chatbox" class="hidden">
     <div class="sfs-chat-header">
@@ -13,6 +13,5 @@
     </form>
   </div>
 
-  <!-- JS here is fine; CSS link should go in your main layout's <head> -->
   <script th:src="@{/js/chatbot.js}" defer></script>
 </th:block>

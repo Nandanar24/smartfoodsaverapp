@@ -22,7 +22,7 @@
       <li><a th:href="@{/logout}">Logout</a></li>
       <li><a th:href="@{/contact}">Contact</a></li>
       <li><a th:href="@{/about}">About</a></li>
-      <li><button id="chat-toggle" class="chat-link-btn"> 💬 </button></li>
+      <li><a href="#" id="chat-toggle" role="button">Chatbot 💬</a></li>
     </ul>
   </nav>
 </header>
@@ -34,5 +34,6 @@
 <footer>
   <p>&copy; 2025 SmartFoodSaver</p>
 </footer>
+<th:block th:replace="fragments/chatbot :: widget"></th:block>
 </body>
 </html>
