@@ -18,9 +18,11 @@ import com.smartfoodsaver.service.ContactService;
 public class PageController {
 
   private final ContactService contactService;
+  private final ContactMessageRepository repo;
 
-  public PageController(ContactService contactService) {
+  public PageController(ContactService contactService, ContactMessageRepository repo) {
     this.contactService = contactService;
+    this.repo = repo;
   }
 
   @GetMapping("/")
@@ -81,7 +83,7 @@ public class PageController {
   }
 
   @GetMapping("/admin/messages")
-  public String listMessages(Model model, ContactMessageRepository repo){
+  public String listMessages(Model model) {
     model.addAttribute("messages", repo.findAll());
     return "admin-messages";
   }

@@ -24,9 +24,8 @@ public class SecurityConfig {
     http
       .requestCache(c -> c.requestCache(new NullRequestCache()))
       .authenticationProvider(authProvider)
-
       .authorizeHttpRequests(auth -> auth
-        .requestMatchers("/", "/signin", "/register", "/style.css", "/images/**","/h2-console/**", "/contact", "/about").permitAll()
+        .requestMatchers("/", "/signin", "/register", "/style.css", "/images/**","/h2-console/**", "/contact").permitAll()
         .requestMatchers(HttpMethod.POST, "/contact").permitAll()
         .anyRequest().authenticated()
       )

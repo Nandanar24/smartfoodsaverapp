@@ -1,0 +1,4 @@
+app:
+  admin:
+    username: admin
+    password: superSecretChangeMe

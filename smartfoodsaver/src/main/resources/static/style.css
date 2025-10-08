@@ -502,3 +502,66 @@ em {
   font-size: 0.9rem;
   margin-top: 4px;
 }
+
+/* ===== Admin Messages Table ===== */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.data-table th {
+  font-weight: 700;
+}
+
+.data-table td {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  line-height: 1.4;
+}
+
+@media (max-width: 720px) {
+  .data-table thead {
+    display: none;
+  }
+  .data-table,
+  .data-table tbody,
+  .data-table tr,
+  .data-table td {
+    display: block;
+    width: 100%;
+  }
+  .data-table tr {
+    margin: 0 0 16px;
+    background: rgba(255,255,255,0.96);
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    padding: 8px 10px;
+  }
+  .data-table td {
+    border: none;
+    padding: 8px 10px;
+  }
+  .data-table td::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 4px;
+  }
+}
+
+.admin-messages.content-card {
+  max-width: 1000px;
+}
