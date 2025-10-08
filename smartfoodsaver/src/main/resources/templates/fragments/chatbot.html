@@ -1,0 +1,18 @@
+<th:block xmlns:th="http://www.thymeleaf.org" th:fragment="widget">
+  <div id="sfs-chat-launcher">💬</div>
+
+  <div id="sfs-chatbox" class="hidden">
+    <div class="sfs-chat-header">
+      <strong>SmartFoodSaver Chat</strong>
+      <button id="sfs-chat-close" aria-label="Close">×</button>
+    </div>
+    <div id="sfs-chat-messages" class="sfs-chat-messages"></div>
+    <form id="sfs-chat-form">
+      <input id="sfs-chat-input" type="text" placeholder="Ask about storage, leftovers, meal plans…" autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- JS here is fine; CSS link should go in your main layout's <head> -->
+  <script th:src="@{/js/chatbot.js}" defer></script>
+</th:block>

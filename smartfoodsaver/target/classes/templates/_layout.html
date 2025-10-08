@@ -5,6 +5,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400&display=swap"
         rel="stylesheet">
   <link th:href="@{/style.css}" rel="stylesheet">
+  <link th:href="@{/css/chatbot.css}" rel="stylesheet">
   <meta charset="UTF-8">
   <title>Smart Food Saver</title>
 </head>
@@ -21,6 +22,7 @@
       <li><a th:href="@{/logout}">Logout</a></li>
       <li><a th:href="@{/contact}">Contact</a></li>
       <li><a th:href="@{/about}">About</a></li>
+      <li><button id="chat-toggle" class="chat-link-btn"> 💬 </button></li>
     </ul>
   </nav>
 </header>
@@ -32,5 +34,6 @@
 <footer>
   <p>&copy; 2025 SmartFoodSaver</p>
 </footer>
+
 </body>
 </html>

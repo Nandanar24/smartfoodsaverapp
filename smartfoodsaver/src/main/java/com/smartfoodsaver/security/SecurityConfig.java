@@ -27,6 +27,7 @@ public class SecurityConfig {
       .authorizeHttpRequests(auth -> auth
         .requestMatchers("/", "/signin", "/register", "/style.css", "/images/**","/h2-console/**", "/contact").permitAll()
         .requestMatchers(HttpMethod.POST, "/contact").permitAll()
+        .requestMatchers(org.springframework.http.HttpMethod.POST, "/api/chat").permitAll()
         .anyRequest().authenticated()
       )
       .csrf(csrf -> csrf.csrfTokenRepository(new HttpSessionCsrfTokenRepository())
